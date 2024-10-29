@@ -15,7 +15,11 @@ const apiResponse = async () => {
   return result.response.text();
 };
 
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.get("/generate", async (req, res) => {
   try {
     const responseText = await apiResponse();
     res.send(`Generated Response: ${responseText}`);
