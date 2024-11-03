@@ -25,7 +25,8 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: `http://localhost:${port}`, // Change to your deployed URL when available
+        // url: `http://localhost:${port}`, // Change to your deployed URL when available
+        url: `https://gemini-api-expriment.vercel.app`,
       },
     ],
   },
