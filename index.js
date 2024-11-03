@@ -10,7 +10,7 @@ const genAI = new GoogleGenerativeAI(key);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const apiResponse = async () => {
-  const prompt = "Tell me a story about a dragon and a knight.";
+  const prompt = "Tell me a joke";
   const result = await model.generateContent(prompt);
   return result.response.text();
 };
