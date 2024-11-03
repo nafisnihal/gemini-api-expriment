@@ -5,11 +5,13 @@ const swaggerUi = require("swagger-ui-express");
 require("dotenv").config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const Response = require("./models/Response");
+const path = require("path");
 
 const app = express();
 const port = 3000;
 
-app.use(express.static("public")); // Add this line to serve static files
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
 // Swagger setup
