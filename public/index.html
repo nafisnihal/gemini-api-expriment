@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Response Generator API</title>
+  </head>
+  <body>
+    <header>
+      <h1>Response Generator API</h1>
+      <p>Your AI-powered content generator</p>
+    </header>
+    <main>
+      <section>
+        <h2>About This API</h2>
+        <p>
+          This API allows you to generate responses based on prompts using
+          Google’s Generative AI. You can save, retrieve, update, and delete
+          generated responses easily.
+        </p>
+      </section>
+      <section>
+        <h2>API Endpoints</h2>
+        <ul>
+          <li>
+            <strong>POST /api/generate:</strong> Generate and store a response.
+          </li>
+          <li>
+            <strong>GET /api/responses:</strong> Retrieve all stored responses.
+          </li>
+          <li>
+            <strong>GET /api/responses/:id:</strong> Retrieve a specific
+            response by ID.
+          </li>
+          <li>
+            <strong>PUT /api/responses/:id:</strong> Update a specific response
+            by ID.
+          </li>
+          <li>
+            <strong>DELETE /api/responses/:id:</strong> Delete a specific
+            response by ID.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Get Started</h2>
+        <p>
+          To generate a response, send a POST request to
+          <code>/api/generate</code> with your prompt in the body.
+        </p>
+        <p>
+          Visit the <a href="/api-docs">API Documentation</a> for more details.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
